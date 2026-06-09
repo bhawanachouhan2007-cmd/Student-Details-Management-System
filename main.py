@@ -56,7 +56,7 @@ class Student:
        except Exception as err:
            print(err)
 
-    def Max_marks(self):
+    def ranklist(self):
        try:
         cursor.execute("SELECT * FROM Students ORDER BY Marks DESC LIMIT 3")
         records = cursor.fetchall()
@@ -183,7 +183,7 @@ if password == 1234:
     elif choice == 4:
         s.delete_record()
     elif choice == 5:
-        s.Max_marks()
+        s.ranklist()
     elif choice == 6:
         s._update_details()
     elif choice == 7:

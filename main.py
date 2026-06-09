@@ -194,5 +194,7 @@ if password == 1234:
         s.grade()
     elif choice == 10:
         break
+    else : 
+        print("Invalid Choice!")
 else:
     print("Invalid password!")
